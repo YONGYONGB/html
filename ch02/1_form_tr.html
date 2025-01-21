@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+           <td>회원가입</td> 
+        </div>
+        <td>개인회원정보 &nbsp;&nbsp;&nbsp; 필수입력사항</td>
+        <table>
+            <tr>
+                <td width = "120px">아이디</td>
+                <td><input type="text"> <input type="button" value="아이디중복체크"></td> 
+            </tr>
+            <tr>
+                <td width>비밀번호</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td width>비밀번호 확인</td>
+                <td><input type="password">
+                    <br>비밀번호는 10-20자 영문자로 시작하고 숫자 또는 소문자로 조합된 문자열이어야 합니다
+                    ex)1111,aaaa,AAAA,****등 등록 불가 합니다.
+                    <div>비밀번호를 변경하실 경우에는 비밀번호란과 비밀번호 확인란에 변경하시는 번호를 새로 입력하시면 
+                    변경됩니다.
+                  </div>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td>이름</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>생년월일</td>
+                <td><input type="datetime-local">
+                    <select name=""id =""><option>양력</option><option>음력</option>
+                </td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td><input type="email"><input type="button" value="메일중복확인"></td>
+            </tr>
+            <tr>
+                <td>주소</td>
+                <td><input type="text">(<input type="text">-<input type="text">)<input type="button" value="우편번호검색">
+                    <div><input type="text"></div><td>
+                    </tr>
+                    
+                    <tr>
+                        <td>핸드폰</td>
+                        <td><input type="number">-<input type="number">-<input type="number">
+                            <input type="checkbox">광고성 정보 이벤트 SNS수신 
+                            <div>※주문 관련정보를 주요 안내 상항은 수신 동의 여부에 관계없이 자동 발송됩니다</div></td>
+                        </tr>
+                        
+                    <tr>
+                        <td>전화번호</td>
+                        <td><input type="number">-<input type="number">-<input type="number">
+                    </tr>
+        </table>
+        <input type="button" value="회원가입">
+        <input type="button" value="이전으로">
+    </form>
+
+
+
+
+
+
+
+</body>
+</html>
