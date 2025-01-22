@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* 일관성있게 코딩하기 위해서 기본적으로 있는 마진과 패딩을 지움*/
+}
+a{color: #222; text-decoration: none;}
+body{color: #222;}
+/* header h1{font-size: 10px;} */
+h1{
+    position: absolute;
+    left: -999px;
+}
+li{list-style: none;}
+
+
+
+/* /////////////commom.css////////////////////// */
+
+/* 기본 가운데 정렬 */
+.view-size{
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.main-logo{
+    font-family: "Abril Fatface";
+    font-size: 32px;
+    color: #056d27;
+}
+.sub-logo{
+    font-size: 26px;
+    font-weight: bold;
+    color: #444;
+}
+
+:root{
+    --header-height:70px;
+    --main-color: #056d27;
+}
+
+.flex{display: flex}
+.center{justify-content: center}
+.between{justify-content: space-between}
+.colum-center{align-items: center}
+/* ////////////////////////////////////////////// */
+
+
+
+header>.wrap{
+    /* border:1px solid red; */
+    /* 자식들을 배치하는 블럭을 설정 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: var(--header-height);
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+#gnb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#gnb > .wrap > ul{
+    display: flex;
+}
+/* >가 없으면 내 모
+든 자식들(손자), >가 바로 직계자식요소만 */
+#gnb > div > ul > li > a:hover{
+    color: var(--main-color);
+}
+#gnb > div > ul > li > a:hover::after{
+    color: var(--main-color);
+    width: calc(100% - 2em);     /* -2em은 padding 값을 의미함  calc는 100% - 2em을 가능하게 함 */
+    left: 1em;          /*a에 대해서  좌우에 패딩 값에 1em을 주었기 때문에 */
+}
+
+
+
+#gnb > div > ul > li > a{
+    height: var(--header-height);;
+    display:flex;
+    align-items: center;
+    padding: 0 1em;      /* 패딩 값을 좌우에 1em을 줌*/
+    position: relative;
+    transition: color 1s;
+    font-weight: bold;
+}
+
+#gnb > div > ul > li > a::after{
+    content:""; 
+    display: block;
+    width: 0;  /*CSS에서 width: 0;은 인라인 요소에서 width: auto;를 의미*/
+    border-bottom: 1px solid var(--main-color) ;
+    /* border값을 넣으면 양옆에 1px이 생기기 때문에 bottom or top을 줘서 양옆 1px값을 주지않게함. */
+    position: absolute;
+    bottom: 0; /* 하단에 위치시키겠다.*/
+    left: 50%;
+    transition: all 0.4s;
+}
+
+/* ////////////////////////////////////////////////////////// */
+#search > div > form{
+    box-sizing: content-box;
+    border: 1px solid #e9e9e9;
+    width: 190px;
+    height: 30px;
+}
+#search > div > form > input[type=search]{
+    width: 158px;
+    border: none;
+    margin-right: 2px;
+    padding: 0 1em;
+}
+#search > div > form > button {
+    width: 30px;
+    border: none;
+    background: url(../../../ex02/images/serch.svg);
+    /* 색은 none이 없기때문에 투명처리는 transparent */
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    background-position: center;
+    /* /* background는 배치 요소와 크기 요소를 주고 있음 * / */
+
+}
+
+
+main>.wrap{
+    /* border: 1px solid #00f; */
+    height: 500px;
+}
+
+footer>.wrap{
+
+    border: 1px solid #0f0;
+}
