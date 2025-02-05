@@ -25,23 +25,103 @@
     //     alert("a가 작다")
     // }
 
-        var engScore;
+        // var engScore = 97;
       
-        if(engScore >= 90 && engScore <=100){
-            alert("a")
-        }else if(engScore >= 80){
-            alert("b")
-        }else if(engScore >= 70){
-            alert("c")
-        }else if(engScore >= 60){
-            alert("d")
-        }else if(engScore >= 50){
-            alert("e")
-        }else if(engScore < 50 && engScore >=0){
-            alert("f")
-        }else{
-            alert("오류입니다")
+        // if(engScore >= 90 && engScore <=100){
+        //     if(engScore >= 97){
+        //         alert("A+");
+        //     }else if(engScore >= 94){
+        //         alert("A0");
+        //     }else{
+        //         alert("A-")
+        //     }
+        // }else if(engScore >= 80){
+        //     if(engScore >= 87){
+        //         alert("B+");
+        //     }else if(engScore >= 84){
+        //         alert("B0");
+        //     }else{
+        //         alert("B-")
+        //     }
+        // }else if(engScore >= 70){
+        //     if(engScore >= 77){
+        //         alert("C+");
+        //     }else if(engScore >= 74){
+        //         alert("C0");
+        //     }else{
+        //         alert("C-")
+        //     }
+        // }else if(engScore >= 60){
+        //     if(engScore >= 67){
+        //         alert("D+");
+        //     }else if(engScore >= 64){
+        //         alert("D0");
+        //     }else{
+        //         alert("D-")
+        //     }
+        // }else if(engScore >= 50){
+        //     if(engScore >= 57){
+        //         alert("E+");
+        //     }else if(engScore >= 54){
+        //         alert("E0");
+        //     }else{
+        //         alert("E-")
+        //     }
+        // }else if(engScore < 50 && engScore >=0){
+        //     alert("f")
+        // }else{
+        //     alert("오류입니다")
+        // }
+
+
+
+
+        var a =0;
+        var b = 0;
+
+        if(a >0 && b > 0){
+            alert("제1사분면입니다");
+        }else if(a < 0 && b > 0){
+            alert("제2사분면입니다");
+        }else if(a < 0 && b < 0){
+            alert("제3사분면입니다");
+        }else if(a > 0 && b <0 ){
+            alert("제4사분면입니다")
+        }else if(a == 0 && b !=0){
+            alert("y축입니다");    
+        }else if(a !=0 && b == 0){
+            alert("x축입니다");
+        }else{ 
+            alert("원점입니다");
         }
+
+        if(x>0){
+            if(y>0){
+                alert("1사분면");
+            }else if(y<0){
+                alert("4사분면")
+            }else{
+                alert("x축입니다")
+            }
+        }else if(x<0)
+            if(y>0){
+                alert("2사분면");
+            }else if(y<0){
+                alert("3사분면")
+            }else{
+                alert("x축입니다")
+        }else{
+            if(y != 0){
+                alert("y축입니다");
+            }else{
+                alert("원점입니다");
+            }
+        }
+
+        
+
+
+
 
     </script>
 </body>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+    // for(let i=1; i < 3; i++){
+    //     alert(i);
+    // }    
+
+    // var sum = 0;
+    // for(let i=1; i < 11; i++){
+    //     sum += i;
+    // }    
+    // alert(sum);
+
+    
+    // for(let i=2; i<9; i++){
+    //     for(let j=0; j<9; j++){
+    //         sum= i*j;
+    //         if(j == 0){
+    //             console.log(i+"의 구구단 입니다")
+    //         }else{
+    //         console.log(i + "*" + j + "=" + sum )
+    //         }
+    //     }
+    // }
+    
+    // for(let i=2; i<9; i++){
+    //     for(let j=1; j<9; j++){
+    //         sum= i*j;
+    //         if(sum %2 ==0){
+    //             console.log(i + "*" + j + "=" + sum )
+    //         }
+    //     }
+    // }
+
+    //     *
+    //    ***         
+    //   *****
+    //  *******
+    // *********
+    
+
+    var a = " " 
+
+    for(let i=1; i<=5;i++){
+        a += "*"
+        console.log(a+i)
+    }
+
+
+    var c = "*";
+
+    for(let i=1; i<=5; i++){
+        let b = "";
+        for(let j=1; j<= 5-i; j++){
+            b += " "   
+        }   
+        console.log(b+c);
+        c += "**"
+    }
+
+
+    var b = "";
+    for(let i=1; i <= 5; i++){
+        var d = "*";
+        for(let j=1; j<= 5-i; j++){
+            d += "**"; 
+        }   
+        console.log(b+d);
+        b += " ";
+    }
+
+    // let은 for문이 끝나고 초기화
+    // var은 계속 이용됨
+
+
+    </script>
+</body>
+</html>
